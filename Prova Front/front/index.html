@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chamados</title>
+</head>
+<body>
+    <header>
+        <h1>Chamados</h1>
+        <button id="cad">CADASTRAR</button>
+    </header>
+    <main>
+        <div class="cont">
+            <div class="cha model">
+                <h2 id="tipo"></h2>
+                <h2 id="severidade"></h2>
+                <h2 id="descri"></h2>
+                <h2 id="data"></h2>
+                <h2 id="hora"></h2>
+                <h2 id="hora-ini"></h2>
+                <h2 id="hora-fim"></h2>
+                <h2 id="destino"></h2>
+                <div class="plus">
+                    <img id="deletar" onclick="remover()" src="lixeira.png" alt="">
+                    <img id="alter" src="ferramenta-lapis.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="modal">
+        <div class="cad-cha">
+            <h2>Tipo do chamado</h2>
+            <input id="tipoc" type="text">
+            <h2>Severidade</h2>
+            <input id="sevec" type="text">
+            <h2>Descrição</h2>
+            <input id="desc" type="text">
+            <h2>Destino</h2>
+            <input id="des" type="text">
+            <button id="btn-cad" onclick="cadastrar()">CADASTRAR</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
