@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons8-paper-plane-50.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Chamados</title>
 </head>
+
 <body>
     <header>
+        <img src="b.png" alt="">
         <h1>Chamados</h1>
-        <button id="cad">CADASTRAR</button>
+        <button class="btn" onclick="ativar()" id="cad">CADASTRAR</button>
     </header>
     <main>
         <div class="cont">
             <div class="cha model">
-                <h2 id="tipo"></h2>
-                <h2 id="severidade"></h2>
-                <h2 id="descri"></h2>
-                <h2 id="data"></h2>
-                <h2 id="hora"></h2>
-                <h2 id="hora-ini"></h2>
-                <h2 id="hora-fim"></h2>
-                <h2 id="destino"></h2>
+                <div class="info">
+                    <h2 id="t-tipo">Tipo</h2>
+                    <h2 class="var" id="tipo"></h2>
+                </div>
+                <div class="info">
+                    <h2 id="t-sev">Nível de Severidade</h2>
+                    <h2 class="var" id="severidade"></h2>
+                </div>
+
+                <div class="info">
+                    <h2>Descrição</h2>
+                    <h2 class="var" id="descri"></h2>
+                </div>
+
+                <div class="info">
+                    <h2>Data da chamada</h2>
+                    <h2 class="var" id="data"></h2>
+                </div>
+
+                <div class="info">
+                    <h2>Hora da chamada</h2>
+                    <h2 class="var" id="hora"></h2>
+                </div>
+
+                <div class="info">
+                    <h2>Hora prevista para inicio</h2>
+                    <h2 class="var" id="hora-ini"></h2>
+                </div>
+
+                <div class="info">
+                    <h2>Hora prevista para o fim</h2>
+                    <h2 class="var" id="hora-fim"></h2>
+                </div>
+
+                <div class="info">
+                    <h2>Destino da chamda</h2>
+                    <h2  class="var" id="destino"></h2>
+                </div>
                 <div class="plus">
-                    <img id="deletar" onclick="remover()" src="lixeira.png" alt="">
+                    <img id="deletar" src="lixeira.png" alt="">
                     <img id="alter" src="ferramenta-lapis.png" alt="">
                 </div>
             </div>
         </div>
 
-    </main>
-    <div class="modal">
-        <div class="cad-cha">
-            <h2>Tipo do chamado</h2>
-            <input id="tipoc" type="text">
-            <h2>Severidade</h2>
-            <input id="sevec" type="text">
-            <h2>Descrição</h2>
-            <input id="desc" type="text">
-            <h2>Destino</h2>
-            <input id="des" type="text">
-            <button id="btn-cad" onclick="cadastrar()">CADASTRAR</button>
+        <div class="modal">
+            <div class="cad-cha">
+                <h2>Tipo do chamado</h2>
+                <input id="tipoc" class="inp" type="text">
+                <h2>Severidade</h2>
+                <input id="sevec" class="inp" type="text">
+                <h2>Descrição</h2>
+                <input id="desc" class="inp" type="text">
+                <h2>Destino</h2>
+                <input id="des" class="inp" type="text">
+                <button id="btn-cad" class="btn" onclick="cadastrar()">CADASTRAR</button>
+                <button id="btn-can" class="btn" onclick="cancelar()">CANCELAR</button>
+            </div>
         </div>
-    </div>
+
+    </main>
+
 </body>
 <script src="script.js"></script>
+
 </html>

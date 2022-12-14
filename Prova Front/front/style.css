@@ -4,15 +4,28 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 header{
+    position: fixed;
+    z-index: 2;
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 6vh;
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 0.713) 0px 13px 27px -5px, rgba(255, 255, 255, 0.702) 0px 8px 16px -8px;
+}
+main{
+    top: 10vh;
+    position: relative;
+    width: 99vw;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
     background-color: black;
 }
 #cad{
@@ -26,6 +39,7 @@ header{
 }
 
 .cont{
+    position: absolute;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -37,10 +51,10 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(7, 7, 7);
     margin: 20px;
     width: 70vw;
-    background-color: rgb(121, 120, 120);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 #deletar{
@@ -54,11 +68,11 @@ header{
     cursor: pointer;
 }
 .modal{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -141vh;
+    
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.509);
@@ -71,5 +85,33 @@ header{
     width: 60vw;
     height: 60vh;
     background-color: white;
+    border-radius: 5px;
+}
+.btn{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inp{
+    width: 15vw;
+    height: 2vh;
+    border-radius: 5px;
+}
+.model{
+    display: none;
+}
+
+.info{
+    display: flex;
+    margin: 10px;
+}
+.info h2{
+    margin-right: 20px;
+}
+.var{
+    color: rgb(157, 157, 157);
 }
 
